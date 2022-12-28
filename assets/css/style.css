@@ -11713,6 +11713,18 @@ p, a, span {
   padding-left: 38px;
   transition: all 0.3s;
 }
+.control.has-icon .input.input-alert {
+  border-color: #DC3545;
+}
+.control.has-icon .input.input-alert:hover {
+  box-shadow: 0 8px 16px -12px rgba(220, 53, 70, 0.179), 0 4px 12px 0 rgba(220, 53, 70, 0.14), 0 4px 5px -5px rgba(220, 53, 70, 0.054) !important;
+}
+.control.has-icon .input.input-succes {
+  border-color: #16C59B;
+}
+.control.has-icon .input.input-succes:hover {
+  box-shadow: 0 8px 16px -12px rgba(22, 197, 156, 0.123), 0 4px 12px 0 rgba(22, 197, 156, 0.123), 0 4px 5px -5px rgba(22, 197, 156, 0.123) !important;
+}
 .control.has-icon .form-icon {
   position: absolute;
   top: 0;
@@ -11766,6 +11778,109 @@ p, a, span {
   color: #6E787C;
 }
 
+.navbar {
+  display: flex;
+  margin-bottom: 0px;
+  max-width: auto;
+}
+.navbar li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  margin-right: 16px;
+  color: #6E787C;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.navbar li:hover {
+  color: #283252;
+}
+.navbar li:last-child {
+  margin-right: 0px;
+  padding: 4px 24px;
+  background-color: #15ACC0;
+  color: white;
+  border-radius: 32px;
+}
+.navbar li:last-child:hover {
+  opacity: 0.9;
+  box-shadow: 0 8px 16px -12px hsla(187deg, 80%, 42%, 0.171), 0 4px 12px 0 hsla(187deg, 80%, 42%, 0.171), 0 4px 5px -5px hsla(187deg, 100%, 73%, 0.208) !important;
+}
+
+.check {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #F4F4F4;
+  border: 1px solid #6E787C;
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.check:hover input ~ .checkmark {
+  background-color: #F4F4F4;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check input:checked ~ .checkmark {
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  border: 1px solid #15ACC0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 3px;
+  height: 8px;
+  border: solid #15ACC0;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 @media screen and (max-width: 576px) {
   .img-login {
     display: none !important;
@@ -11785,6 +11900,93 @@ p, a, span {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.body-login {
+  background-color: #F4F4F4;
+}
+.body-login .nav-header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.body-login .nav-header .nav-login {
+  display: flex;
+  align-items: center;
+}
+.body-login .nav-header .nav-login .div-img {
+  border: 1px solid #EAEBEF;
+  border-radius: 100%;
+  padding: 22px 8px;
+  margin-right: 10px;
+}
+.body-login .nav-header .nav-login h1, .body-login .nav-header .nav-login .h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.background-with {
+  background-color: white;
+  border: 1px solid #EAEBEF;
+  border-radius: 4px;
+}
+
+.login-title {
+  color: #283252;
+}
+
+.registro-icon {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  height: 38px;
+  width: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control.has-icon label {
+  color: #6E787C;
+  margin-bottom: 4px;
+}
+
+.field {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.field:last-child {
+  margin-bottom: 0px !important;
+}
+.field:nth-last-child(2) {
+  margin-bottom: 0px !important;
+}
+.field:nth-last-child(3) {
+  margin-bottom: 0px !important;
+}
+
+.registro {
+  margin-top: 16px;
+}
+.registro-form {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .registro-form {
+    max-width: 620px;
+  }
+}
+
+.alert {
+  font-size: 12px;
+  color: #DC3545;
+  margin-bottom: 0px;
+}
+.alert p {
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
