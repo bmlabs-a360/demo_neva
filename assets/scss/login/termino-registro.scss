@@ -1,0 +1,67 @@
+.services {
+    border:1px solid $gris-300;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: end;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin-bottom: 0px;
+        @include mv(991px){
+            & {
+                font-size: 10px!important;
+            }
+        }
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 600;
+        color:$secundary-400;
+        @include mv(991px){
+            & {
+                font-size: 22px!important;
+            }
+        }
+    }
+    &.center {
+        text-align: center;
+        & p {
+            margin-left: 60px;
+        }
+    }
+    &.card-disable{
+        border: 1px solid $gris-300;
+        background-color: $gris-300;
+        color: $gris-400;
+        h3 {
+            font-weight: 600;
+        }
+    }
+
+    &.card-producto {
+
+    
+
+        &:focus, &:hover, &:target {
+            cursor:pointer;
+            box-shadow: $primary-box-shadow;
+            border: 1px solid $aqua-400;
+            background-color: $aqua-400;
+            color: white;
+            h3 {
+                color:white;
+            }
+        }
+
+    }
+}
+.detail {
+    margin-top: 16px;
+    color: $gris-400;
+    font-size: 10px;
+    & span {
+        color:$secundary-400;
+    }
+}

@@ -11989,4 +11989,66 @@ p, a, span {
   margin-bottom: 0px;
 }
 
+.services {
+  border: 1px solid #EAEBEF;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: end;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services p {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 991px) {
+  .services p {
+    font-size: 10px !important;
+  }
+}
+.services h3, .services .h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #283252;
+}
+@media screen and (max-width: 991px) {
+  .services h3, .services .h3 {
+    font-size: 22px !important;
+  }
+}
+.services.center {
+  text-align: center;
+}
+.services.center p {
+  margin-left: 60px;
+}
+.services.card-disable {
+  border: 1px solid #EAEBEF;
+  background-color: #EAEBEF;
+  color: #6E787C;
+}
+.services.card-disable h3, .services.card-disable .h3 {
+  font-weight: 600;
+}
+.services.card-producto:focus, .services.card-producto:hover, .services.card-producto:target {
+  cursor: pointer;
+  box-shadow: 0 8px 16px -12px hsla(187deg, 80%, 42%, 0.171), 0 4px 12px 0 hsla(187deg, 80%, 42%, 0.171), 0 4px 5px -5px hsla(187deg, 100%, 73%, 0.208) !important;
+  border: 1px solid #15ACC0;
+  background-color: #15ACC0;
+  color: white;
+}
+.services.card-producto:focus h3, .services.card-producto:focus .h3, .services.card-producto:hover h3, .services.card-producto:hover .h3, .services.card-producto:target h3, .services.card-producto:target .h3 {
+  color: white;
+}
+
+.detail {
+  margin-top: 16px;
+  color: #6E787C;
+  font-size: 10px;
+}
+.detail span {
+  color: #283252;
+}
+
 /*# sourceMappingURL=style.css.map */
