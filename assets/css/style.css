@@ -12240,6 +12240,10 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  width: 50px;
+}
+
 .body-login {
   background-color: #F4F4F4;
 }
