@@ -312,3 +312,11 @@ vertical-align: top;
 .ml-auto {
     margin-left: auto !important;
   }
+
+
+//A
+a {
+    color: var(--link);
+    cursor: pointer;
+    text-decoration: none;
+  }
