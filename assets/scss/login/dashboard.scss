@@ -34,7 +34,7 @@
     background-color: white;
     left: -190px;
     box-shadow: 5px 4px 4px rgba(110, 120, 124, 0.06);
-    transition: all 0.3s;
+    transition: all 0.2s;
     .accordion-button {
         font-size: 12px;
     }
@@ -79,7 +79,6 @@
 .view-wrapper {
     position: relative;
     height: 100%;
-    min-height: 100vh;
     width: calc(100% - 80px);
     padding: 0 0 60px;
     margin-left: 75px;
@@ -216,7 +215,6 @@
   .page-title {
     position: relative;
     height: 60px;
-    margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -258,15 +256,6 @@
                 text-decoration: none;
                 display: flex;
                 padding: .65rem 0;
-                & .img-left img {
-                    display: inline-block;
-                    vertical-align: middle;
-                    height: 2.25rem;
-                    width: 2.25rem;
-                    margin: 0 .5rem 0 0;
-                    border-radius: 50%;
-                    max-width: 100%;
-                  }
                   & .user-content{ 
                     font-weight: 300;
                     color: $secundary-400;
@@ -286,4 +275,32 @@
           }
       }
 
+  }
+
+
+  .nav {
+    &.nav-pills{
+      background: white;
+      border-radius: 8px;
+      color: $aqua-400;
+      & .nav-item {
+        & .nav-link {
+          color:$aqua-400;
+          &.active {
+            color:white;
+            background-color: $aqua-400;
+          }
+        }
+      }
+    }
+  }
+
+  .img-left img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2.25rem;
+    width: 2.25rem;
+    margin: 0 .5rem 0 0;
+    border-radius: 50%;
+    max-width: 100%;
   }

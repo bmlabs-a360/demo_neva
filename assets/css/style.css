@@ -12048,8 +12048,16 @@ p, a, span {
   justify-content: center;
   align-items: center;
 }
+.control.has-icon .form-icon.search {
+  top: 14px;
+  height: 10px;
+  border-radius: 8px;
+}
 .control.has-icon.has-icon .input {
   height: 48px;
+}
+.control.has-icon.has-icon .input.new {
+  height: 36px;
 }
 
 .button.is-fullwidth {
@@ -12417,7 +12425,7 @@ a {
   background-color: white;
   left: -190px;
   box-shadow: 5px 4px 4px rgba(110, 120, 124, 0.06);
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .sidebar-panel .accordion-button {
   font-size: 12px;
@@ -12459,7 +12467,6 @@ a {
 .view-wrapper {
   position: relative;
   height: 100%;
-  min-height: 100vh;
   width: calc(100% - 80px);
   padding: 0 0 60px;
   margin-left: 75px;
@@ -12603,7 +12610,6 @@ a {
 .page-title {
   position: relative;
   height: 60px;
-  margin-bottom: 20px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -12650,15 +12656,6 @@ a {
   display: flex;
   padding: 0.65rem 0;
 }
-.dropdown.is-spaced .dropdown-menu .dropdown-content .notification-list .notification-item .img-left img {
-  display: inline-block;
-  vertical-align: middle;
-  height: 2.25rem;
-  width: 2.25rem;
-  margin: 0 0.5rem 0 0;
-  border-radius: 50%;
-  max-width: 100%;
-}
 .dropdown.is-spaced .dropdown-menu .dropdown-content .notification-list .notification-item .user-content {
   font-weight: 300;
   color: #283252;
@@ -12674,6 +12671,84 @@ a {
   margin: 0;
   font-size: 0.85rem;
   color: #6E787C;
+}
+
+.nav.nav-pills {
+  background: white;
+  border-radius: 8px;
+  color: #15ACC0;
+}
+.nav.nav-pills .nav-item .nav-link {
+  color: #15ACC0;
+}
+.nav.nav-pills .nav-item .nav-link.active {
+  color: white;
+  background-color: #15ACC0;
+}
+
+.img-left img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2.25rem;
+  width: 2.25rem;
+  margin: 0 0.5rem 0 0;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cards-none {
+  padding: 0px !important;
+}
+@media screen and (max-width: 576px) {
+  .cards {
+    display: none !important;
+  }
+}
+.cards-hello {
+  border-radius: 8px;
+  background-color: #143B40;
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px 16px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cards-hello {
+    width: calc(1000% - 10px);
+  }
+}
+.cards-hello h2, .cards-hello .h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 16px;
+}
+.cards-hello p {
+  font-size: 14px;
+  font-weight: 200;
+}
+.cards-message {
+  padding: 40px 16px;
+  border-radius: 8px;
+  background-color: white;
+  width: calc(50% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .cards-message {
+    width: calc(1000% - 10px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

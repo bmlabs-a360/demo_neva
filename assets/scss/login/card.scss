@@ -1,0 +1,43 @@
+.cards {
+    &-none {
+        padding: 0px!important;
+    }
+    @include mv(576px){display: none!important;}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    &-hello {
+        @include mv(768px){width: calc(1000% - 10px);}
+        border-radius: 8px;
+        background-color: $aqua-500;
+        width: calc(50% - 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 40px 16px;
+        text-align: center;
+        & h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 16px;
+            
+        }
+        & p {
+            font-size: 14px;
+            font-weight: 200;
+        }
+    }
+    &-message {
+        @include mv(768px){width: calc(1000% - 10px);}
+        padding: 40px 16px;
+        border-radius: 8px;
+        background-color: white;
+        width: calc(50% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}
