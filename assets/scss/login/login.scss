@@ -127,6 +127,7 @@ vertical-align: top;
     height: 48px;
     &.new {
         height: 36px;
+        border-radius: 8px;
     }
 }
 }
@@ -333,4 +334,48 @@ a {
 
 .logo {
     width:50px;
+}
+.circle {
+    margin-bottom: 8px;
+
+     & h6 {
+        text-transform: capitalize;
+        color: $aqua-400;
+        margin-bottom: 0;
+        
+     }
+     & p {
+        color: $gris-300;
+     }
+     & .active{
+        background-color: $success;
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+     }
+     & .inactive{
+        background-color: $warning;
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+     }
+     & .absent{
+        background-color: $danger;
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+     }
+}
+.message {
+    font-size: 12px;
+    color:$gris-400;
+}
+.card {
+    border: 1px solid $gris-300;
 }

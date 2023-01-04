@@ -169,7 +169,7 @@
         background: white;
         border-color: $gris-300;
         border-radius: 50%;
-        box-shadow: $sucess-box-shadow;
+        box-shadow: $secundary-400;
       }
   }
   .dropdown{
@@ -233,7 +233,7 @@
         width: 20rem;
         background: white;
         border-radius: 5px;
-        box-shadow: $sucess-box-shadow;
+        box-shadow: $secundary-400;
         padding-top: 0;
         & .heading {
             display: flex;
@@ -295,7 +295,16 @@
     }
   }
 
-  .img-left img {
+  .img-left {
+    max-width: 100px;
+    min-width: 100px;
+    & .company {
+      height: 6.25rem;
+    width: 6.25rem;
+    object-fit:contain;
+    background-color:#1b0188;
+    }
+    & img {
     display: inline-block;
     vertical-align: middle;
     height: 2.25rem;
@@ -303,4 +312,4 @@
     margin: 0 .5rem 0 0;
     border-radius: 50%;
     max-width: 100%;
-  }
+  }}

@@ -12058,6 +12058,7 @@ p, a, span {
 }
 .control.has-icon.has-icon .input.new {
   height: 36px;
+  border-radius: 8px;
 }
 
 .button.is-fullwidth {
@@ -12242,6 +12243,51 @@ a {
 
 .logo {
   width: 50px;
+}
+
+.circle {
+  margin-bottom: 8px;
+}
+.circle h6, .circle .h6 {
+  text-transform: capitalize;
+  color: #15ACC0;
+  margin-bottom: 0;
+}
+.circle p {
+  color: #EAEBEF;
+}
+.circle .active {
+  background-color: #16C59B;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.circle .inactive {
+  background-color: #FFC610;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.circle .absent {
+  background-color: #DC3545;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.message {
+  font-size: 12px;
+  color: #6E787C;
+}
+
+.card {
+  border: 1px solid #EAEBEF;
 }
 
 .body-login {
@@ -12563,7 +12609,7 @@ a {
   background: white;
   border-color: #EAEBEF;
   border-radius: 50%;
-  box-shadow: 0 8px 16px -12px rgba(22, 197, 156, 0.123), 0 4px 12px 0 rgba(22, 197, 156, 0.123), 0 4px 5px -5px rgba(22, 197, 156, 0.123) !important;
+  box-shadow: #283252;
 }
 
 .dropdown {
@@ -12634,7 +12680,7 @@ a {
   width: 20rem;
   background: white;
   border-radius: 5px;
-  box-shadow: 0 8px 16px -12px rgba(22, 197, 156, 0.123), 0 4px 12px 0 rgba(22, 197, 156, 0.123), 0 4px 5px -5px rgba(22, 197, 156, 0.123) !important;
+  box-shadow: #283252;
   padding-top: 0;
 }
 .dropdown.is-spaced .dropdown-menu .dropdown-content .heading {
@@ -12690,6 +12736,16 @@ a {
   background-color: #15ACC0;
 }
 
+.img-left {
+  max-width: 100px;
+  min-width: 100px;
+}
+.img-left .company {
+  height: 6.25rem;
+  width: 6.25rem;
+  object-fit: contain;
+  background-color: #1b0188;
+}
 .img-left img {
   display: inline-block;
   vertical-align: middle;
