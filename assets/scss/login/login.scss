@@ -335,6 +335,9 @@ a {
 
 .logo {
     width:50px;
+    @include mv(576px){
+        display: none;
+  }
 }
 .circle {
     margin-bottom: 8px;
