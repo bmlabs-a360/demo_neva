@@ -40,7 +40,11 @@
     }
     &.active {
         left:70px;
+        @include mv(992px){
+          position: fixed;
+          z-index: 99;
     }
+  }
     .content-sidebar {
         
         padding: 0 20px;
@@ -81,12 +85,16 @@
     height: 100%;
     width: calc(100% - 80px);
     padding: 0 0 60px;
-    margin-left: 75px;
+    margin-left: 80px;
     background: var(--background-grey);
     transition: all .3s;
     &.is-pushed-full {
         margin-left: 335px;
         width: calc(100% - 340px);
+        @include mv(992px){
+          margin-left: 80px;
+        width: calc(100% - 80px);
+    }
     }
   }
   .menu-toggle {
@@ -296,12 +304,11 @@
   }
 
   .img-left {
-    max-width: 100px;
-    min-width: 100px;
+
     & .company {
-      height: 6.25rem;
-    width: 6.25rem;
-    object-fit:contain;
+      min-width: 100px;
+      min-height: 100px;
+    object-fit:cover;
     background-color:#1b0188;
     }
     & img {
@@ -309,7 +316,62 @@
     vertical-align: middle;
     height: 2.25rem;
     width: 2.25rem;
-    margin: 0 .5rem 0 0;
     border-radius: 50%;
     max-width: 100%;
-  }}
+  } 
+}
+.data-icon {
+  gap:16px;
+ div {
+  
+  &:last-child {
+    margin-right: 0px;
+  }
+ }
+& .responsible {
+  margin-left: 8px;
+}
+& p {
+  margin-bottom: 0;
+  color: $gris-400;
+}
+
+}
+.btn {
+  padding: 8px 24px;
+  &.secundary {
+    border:solid 1px $aqua-400;
+    border-radius: 8px;
+    color:$aqua-400;
+    background-color: white;
+    &:hover {
+      color:white;
+      background-color: $aqua-400;
+      border:solid 1px $aqua-400;
+      box-shadow: $sucess-box-shadow;
+    }
+  }
+  &.circle {
+    padding:8px 12px;
+    border:solid 1px $gris-300;
+    border-radius: 50%;
+    color:$aqua-400;
+    background-color: $gris-300;
+    margin-bottom: 0;
+    @include mv(992px){
+      position: absolute;
+      top: 10px;
+      right: 10px;}
+    &:hover {
+      color:white;
+      background-color: $yellow-400;
+      border:solid 1px $yellow-400;
+      box-shadow: $alert-box-shadow;
+    }
+    &.active {
+      color:white;
+      background-color: $yellow-400;
+      border:solid 1px $yellow-400;
+    }
+  }
+}

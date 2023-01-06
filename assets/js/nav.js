@@ -2,7 +2,7 @@ const menuBtn = document.querySelector('.menu-toggle');
 const sider = document.querySelector('.sidebar-panel');
 const viewWrapper = document.querySelector('.view-wrapper')
 const dropdownTrigger = document.querySelector('.dropdown-trigger')
-
+const closeBtn = document.querySelector('.close')
 let menuOpen = false;
 let dropdown= false;
 menuBtn.addEventListener('click', () => {
@@ -18,7 +18,7 @@ menuBtn.addEventListener('click', () => {
     }
 
   });
-
+  
   dropdownTrigger.addEventListener('click', () => {
     if (!dropdown) {
     dropdownTrigger.classList.add('is-active');
@@ -28,3 +28,11 @@ menuBtn.addEventListener('click', () => {
     dropdown=false;
 }
   });
+closeBtn.addEventListener('click', () => {
+
+    sider.classList.remove('active');
+    viewWrapper.classList.remove('is-pushed-full');
+    menuOpen=false;
+
+});
+  

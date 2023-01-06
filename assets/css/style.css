@@ -12059,6 +12059,7 @@ p, a, span {
 .control.has-icon.has-icon .input.new {
   height: 36px;
   border-radius: 8px;
+  width: 200px !important;
 }
 
 .button.is-fullwidth {
@@ -12289,6 +12290,15 @@ a {
 .card {
   border: 1px solid #EAEBEF;
 }
+.card h3, .card .h3 {
+  font-size: 18px !important;
+  color: #283252;
+}
+
+.close {
+  background: none;
+  border: none;
+}
 
 .body-login {
   background-color: #F4F4F4;
@@ -12483,6 +12493,12 @@ a {
 .sidebar-panel.active {
   left: 70px;
 }
+@media screen and (max-width: 992px) {
+  .sidebar-panel.active {
+    position: fixed;
+    z-index: 99;
+  }
+}
 .sidebar-panel .content-sidebar {
   padding: 0 20px;
 }
@@ -12519,13 +12535,19 @@ a {
   height: 100%;
   width: calc(100% - 80px);
   padding: 0 0 60px;
-  margin-left: 75px;
+  margin-left: 80px;
   background: var(--background-grey);
   transition: all 0.3s;
 }
 .view-wrapper.is-pushed-full {
   margin-left: 335px;
   width: calc(100% - 340px);
+}
+@media screen and (max-width: 992px) {
+  .view-wrapper.is-pushed-full {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+  }
 }
 
 .menu-toggle {
@@ -12736,14 +12758,10 @@ a {
   background-color: #15ACC0;
 }
 
-.img-left {
-  max-width: 100px;
-  min-width: 100px;
-}
 .img-left .company {
-  height: 6.25rem;
-  width: 6.25rem;
-  object-fit: contain;
+  min-width: 100px;
+  min-height: 100px;
+  object-fit: cover;
   background-color: #1b0188;
 }
 .img-left img {
@@ -12751,9 +12769,64 @@ a {
   vertical-align: middle;
   height: 2.25rem;
   width: 2.25rem;
-  margin: 0 0.5rem 0 0;
   border-radius: 50%;
   max-width: 100%;
+}
+
+.data-icon {
+  gap: 16px;
+}
+.data-icon div:last-child {
+  margin-right: 0px;
+}
+.data-icon .responsible {
+  margin-left: 8px;
+}
+.data-icon p {
+  margin-bottom: 0;
+  color: #6E787C;
+}
+
+.btn {
+  padding: 8px 24px;
+}
+.btn.secundary {
+  border: solid 1px #15ACC0;
+  border-radius: 8px;
+  color: #15ACC0;
+  background-color: white;
+}
+.btn.secundary:hover {
+  color: white;
+  background-color: #15ACC0;
+  border: solid 1px #15ACC0;
+  box-shadow: 0 8px 16px -12px rgba(22, 197, 156, 0.123), 0 4px 12px 0 rgba(22, 197, 156, 0.123), 0 4px 5px -5px rgba(22, 197, 156, 0.123) !important;
+}
+.btn.circle {
+  padding: 8px 12px;
+  border: solid 1px #EAEBEF;
+  border-radius: 50%;
+  color: #15ACC0;
+  background-color: #EAEBEF;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 992px) {
+  .btn.circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+.btn.circle:hover {
+  color: white;
+  background-color: #ED9A37;
+  border: solid 1px #ED9A37;
+  box-shadow: 0 8px 16px -12px rgba(220, 53, 70, 0.179), 0 4px 12px 0 rgba(220, 53, 70, 0.14), 0 4px 5px -5px rgba(220, 53, 70, 0.054) !important;
+}
+.btn.circle.active {
+  color: white;
+  background-color: #ED9A37;
+  border: solid 1px #ED9A37;
 }
 
 .cards {

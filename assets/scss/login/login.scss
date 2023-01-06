@@ -128,6 +128,7 @@ vertical-align: top;
     &.new {
         height: 36px;
         border-radius: 8px;
+        width: 200px!important;
     }
 }
 }
@@ -378,4 +379,12 @@ a {
 }
 .card {
     border: 1px solid $gris-300;
+    & h3 {
+        font-size: 18px!important;
+        color:$secundary-400;
+    }
+}
+.close {
+    background: none;
+    border: none;
 }
