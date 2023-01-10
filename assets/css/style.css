@@ -12305,6 +12305,10 @@ a {
   border: none;
 }
 
+.img-logo {
+  width: 80px;
+}
+
 .body-login {
   background-color: #F4F4F4;
 }
