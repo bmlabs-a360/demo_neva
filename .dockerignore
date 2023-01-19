@@ -1,0 +1,4 @@
+.github/
+Dockerfile
+*.dmg
+.git/
